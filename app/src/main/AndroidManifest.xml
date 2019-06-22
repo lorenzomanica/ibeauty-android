@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cursoandroid.danielmorsch.ibeauty">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,11 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AgendamentosPendentes"></activity>
-        <activity android:name=".TelaPrincipalEmpresa" />
-        <activity android:name=".DetalheEmpresa" />
-        <activity android:name=".TelaPrincipal" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentation.AgendamentoDetailActivity"></activity>
+        <activity
+            android:name=".presentation.SelectHorarioActivity"
+            android:label="@string/title_activity_select_horario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".presentation.AgendamentosPendentes" />
+        <activity android:name=".presentation.TelaPrincipalEmpresa" />
+        <activity android:name=".presentation.ServicoDetailActivity" />
+        <activity android:name=".presentation.HomeActivity" />
+        <activity android:name=".presentation.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

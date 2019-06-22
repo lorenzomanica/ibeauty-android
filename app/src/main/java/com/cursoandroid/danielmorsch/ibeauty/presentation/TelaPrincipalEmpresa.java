@@ -1,12 +1,14 @@
-package com.cursoandroid.danielmorsch.ibeauty;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.cursoandroid.danielmorsch.ibeauty.presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.cursoandroid.danielmorsch.ibeauty.R;
 
 public class TelaPrincipalEmpresa extends AppCompatActivity {
     private TextView bemvindo;
@@ -20,7 +22,7 @@ public class TelaPrincipalEmpresa extends AppCompatActivity {
         bemvindo = findViewById(R.id.bemvindo_empresa_id);
         Bundle extra = getIntent().getExtras();
 
-        if(extra != null){
+        if (extra != null) {
             //monta mensagem de boas vindas
             bemvindo.setText(bemvindo.getText().toString() + " " + extra.getString("usuario"));
         }

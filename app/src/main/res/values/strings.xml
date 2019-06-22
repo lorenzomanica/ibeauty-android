@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">iBeauty</string>
+    <string name="usuario">Usuário</string>
     <string-array name="nomeservicos">
         <item>Design de sobrancelhas</item>
         <item>Decoração de unhas</item>
@@ -7,4 +8,5 @@
         <item>Matização para cabelos</item>
         <item>Spa para os pés</item>
     </string-array>
+    <string name="title_activity_select_horario">SelectHorarioActivity</string>
 </resources>

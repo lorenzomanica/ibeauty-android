@@ -1,4 +1,4 @@
-package com.cursoandroid.danielmorsch.ibeauty;
+package com.cursoandroid.danielmorsch.ibeauty.presentation;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,6 @@ import android.widget.ScrollView;
 import android.widget.LinearLayout;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.EditText;
 import android.widget.CheckBox;
 
 import java.util.ArrayList;
